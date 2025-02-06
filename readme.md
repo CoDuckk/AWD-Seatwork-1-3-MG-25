@@ -4,32 +4,27 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
+  <a href="https://github.com/CoDuckk/">
+
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
-</div>
-<!-- TODO: Make a short description -->
-<div align="center">
-  Short Description. (Optional)
+
+  <h3 align="center">AWD-Seatwork-1-3-MG-25</h3>
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+![](https://visit-counter.vercel.app/counter.png?page=CoDuckk/AWD-Seatwork-1-3-MG-25)
+
+[![wakatime](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f.svg)](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f)
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,25 +52,37 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
+
+
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+
+-The purpose of this project is to create an interactive movie booking system that:
+✔ Allows users to choose between two movies 🎥
+✔ Displays real-time seat availability 🎟
+✔ Prevents booking once seats are fully booked 🚫
+✔ Provides a modern and responsive design for Full HD screens 🖥
+
+This system simulates a simple ticket reservation mechanism that could be expanded for real-world applications.
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+
+🔄 Seat Reservation System
+✔ Real-time seat availability updates dynamically.
+✔ Prevents users from overbooking.
+✔ Displays an alert when no seats are left.
+
+🎨 Full HD Optimized UI (1920x1080)
+✔ Uses external CSS for layout & styling.
+✔ Fully optimized for high-resolution displays.
+✔ Clean, user-friendly movie selection interface.
+
+🎭 Movie Details Page (Multipage Navigation)
+✔ Users can click on a movie to see more details.
+✔ Contains additional information, images, and trailers.
 
 ### Technology
-<!-- TODO: List of Technology Used -->
+
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -116,7 +123,10 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
+
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Google | Use for images | google.com |
+| HTML Documentation | Reference for HTML elements and attributes. | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS Documentation | Reference for CSS properties and styling techniques. | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| JavaScript Documentation | Guide for JavaScript fundamentals, including variables, loops, and DOM manipulation. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
