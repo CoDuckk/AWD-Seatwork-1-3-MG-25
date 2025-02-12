@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/CoDuckk/">
 
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    
   </a>
 
   <h3 align="center">AWD-Seatwork-1-3-MG-25</h3>
