@@ -1,4 +1,3 @@
-/* Full HD Layout */
 body {
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
@@ -7,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 .container {
     width: 1920px;
@@ -18,8 +18,8 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    display: flex;
+    gap: 50px;
 }
 
 .movies {
@@ -37,8 +37,11 @@ h1 {
 
 .movieCard img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
     border-radius: 10px;
+    background-color: #1a1a1a;
 }
 
 button {
@@ -53,5 +56,5 @@ button {
 }
 
 button:hover {
-    background: #ff4a3d;
+    background: #ff4a3d
 }
