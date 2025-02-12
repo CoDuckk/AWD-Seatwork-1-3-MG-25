@@ -17,7 +17,7 @@
 
 ![](https://visit-counter.vercel.app/counter.png?page=CoDuckk/AWD-Seatwork-1-3-MG-25)
 
-[![wakatime](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f.svg)](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f)
+[[![wakatime](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f.svg)](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f)](https://wakatime.com/badge/user/3f928bd0-a446-475a-877d-b3a3338328e4/project/02dafe8c-dbf8-4635-a40c-17f0264ad85f.svg)
 
 ---
 
