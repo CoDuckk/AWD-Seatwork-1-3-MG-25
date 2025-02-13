@@ -12,7 +12,7 @@
         <h1>Movie Ticket Booking 🎬</h1>
         
         <div class="movies">
-            <!-- Movie 1 -->
+            
             <div class="movieCard">
                 <img src="assets/img/movie1.webp" alt="Movie 1">
                 <h2>Movie 1</h2>
@@ -20,7 +20,7 @@
                 <button onclick="bookSeat('movie1')">Book Now</button>
             </div>
 
-            <!-- Movie 2 -->
+            
             <div class="movieCard">
                 <img src="assets/img/movie2.webp" alt="Movie 2">
                 <h2>Movie 2</h2>
@@ -29,6 +29,12 @@
             </div>
         </div>
 
+        <div class="historySection">
+            <h2>Booking History 📜</h2>
+            <ul id="bookingHistory"></ul>
+            <button class="clearHistoryBtn" onclick="clearHistory()">Clear History</button>
+                <!-- Booking History will be displayed here -->
+        </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
