@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WD-MovieBooking</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <div class="container">
         <h1>Movie Ticket Booking 🎬</h1>
-        
+
         <div class="movies">
-            
+            <!-- Movie 1 -->
             <div class="movieCard">
                 <img src="assets/img/movie1.webp" alt="Movie 1">
                 <h2>Movie 1</h2>
-                <p>Seats Available: <span id="seatsMovie1">10</span></p>
-                <button onclick="bookSeat('movie1')">Book Now</button>
+                <p>Select a Seat:</p>
+                <div class="seatContainer" id="seatsMovie1"></div>
             </div>
 
-            
+            <!-- Movie 2 -->
             <div class="movieCard">
                 <img src="assets/img/movie2.webp" alt="Movie 2">
                 <h2>Movie 2</h2>
-                <p>Seats Available: <span id="seatsMovie2">10</span></p>
-                <button onclick="bookSeat('movie2')">Book Now</button>
+                <p>Select a Seat:</p>
+                <div class="seatContainer" id="seatsMovie2"></div>
             </div>
         </div>
 
+        <!-- Booking History Section -->
         <div class="historySection">
             <h2>Booking History 📜</h2>
             <ul id="bookingHistory"></ul>
             <button class="clearHistoryBtn" onclick="clearHistory()">Clear History</button>
-                <!-- Booking History will be displayed here -->
         </div>
+
     </div>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

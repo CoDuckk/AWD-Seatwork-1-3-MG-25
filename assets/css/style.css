@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-
 .container {
     width: 1920px;
     height: 1080px;
@@ -18,8 +17,8 @@ body {
 }
 
 h1 {
-    display: flex;
-    gap: 50px;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .movies {
@@ -27,6 +26,7 @@ h1 {
     gap: 50px;
 }
 
+/* Movie Card Styling */
 .movieCard {
     background: #2c2c2c;
     padding: 20px;
@@ -41,24 +41,36 @@ h1 {
     max-height: 300px;
     object-fit: contain;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: black;
 }
 
-button {
-    background: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
+/* Seat Selection Styling */
+.seatContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-button:hover {
-    background: #ff4a3d
+.seat.booked {
+    background: gray;
+    cursor: not-allowed;
 }
 
+/* Booking History Section */
 .historySection {
     margin-top: 30px;
     background: #333;
@@ -66,10 +78,6 @@ button:hover {
     border-radius: 10px;
     width: 50%;
     text-align: center;
-}
-
-.historySection h2 {
-    font-size: 1.8rem;
 }
 
 #bookingHistory {

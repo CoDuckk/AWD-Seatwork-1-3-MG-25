@@ -1,46 +1,66 @@
-
+// Initial Seat Availability (Seats 1-10)
 let seats = {
-    movie1: 10,
-    movie2: 10
+    movie1: Array(10).fill(false),
+    movie2: Array(10).fill(false)
 };
 
+// Load seat data and history on page load
+document.addEventListener("DOMContentLoaded", () => {
+    loadSeats();
+    loadHistory();
+});
 
-document.addEventListener("DOMContentLoaded", loadHistory);
+// Function to load seat selection UI
+function loadSeats() {
+    ["movie1", "movie2"].forEach(movie => {
+        let seatContainer = document.getElementById(`seats${capitalize(movie)}`);
+        seatContainer.innerHTML = "";
 
+        let bookedSeats = JSON.parse(localStorage.getItem(`${movie}Seats`)) || [];
 
-function bookSeat(movie, movieName) {
-    if (seats[movie] > 0) {
-        seats[movie]--;
-        document.getElementById(`seats${capitalize(movie)}`).textContent = seats[movie];
+        for (let i = 1; i <= 10; i++) {
+            let seat = document.createElement("div");
+            seat.classList.add("seat");
+            seat.textContent = i;
 
-        if (seats[movie] === 0) {
-            alert("No more seats available for this movie!");
-            document.querySelector(`[onclick="bookSeat('${movie}', '${movieName}')"]`).disabled = true;
+            if (bookedSeats.includes(i)) {
+                seat.classList.add("booked");
+            } else {
+                seat.addEventListener("click", () => bookSeat(movie, i));
+            }
+
+            seatContainer.appendChild(seat);
         }
+    });
+}
 
-        // Save booking history
-        saveHistory(movieName);
+// Function to book a specific seat
+function bookSeat(movie, seatNumber) {
+    let bookedSeats = JSON.parse(localStorage.getItem(`${movie}Seats`)) || [];
+
+    if (!bookedSeats.includes(seatNumber)) {
+        bookedSeats.push(seatNumber);
+        localStorage.setItem(`${movie}Seats`, JSON.stringify(bookedSeats));
+
+        saveHistory(movie, seatNumber);
+        loadSeats();
     }
 }
 
-
-function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-
-function saveHistory(movieName) {
+// Function to save booking history
+function saveHistory(movie, seatNumber) {
     let history = JSON.parse(localStorage.getItem("bookingHistory")) || [];
     history.push({
-        movie: movieName,
+        movie: capitalize(movie),
+        seat: seatNumber,
         date: new Date().toLocaleString()
     });
 
     localStorage.setItem("bookingHistory", JSON.stringify(history));
-    loadHistory(); 
+    loadHistory();
 }
 
-
+// Function to load booking history
 function loadHistory() {
     let historyList = document.getElementById("bookingHistory");
     historyList.innerHTML = "";
@@ -49,13 +69,21 @@ function loadHistory() {
 
     history.forEach(entry => {
         let listItem = document.createElement("li");
-        listItem.textContent = `${entry.movie} - Booked on ${entry.date}`;
+        listItem.textContent = `${entry.movie} - Seat ${entry.seat} - Booked on ${entry.date}`;
         historyList.appendChild(listItem);
     });
 }
 
-
+// Function to clear booking history
 function clearHistory() {
     localStorage.removeItem("bookingHistory");
+    localStorage.removeItem("movie1Seats");
+    localStorage.removeItem("movie2Seats");
+    loadSeats();
     loadHistory();
+}
+
+// Function to capitalize text
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
